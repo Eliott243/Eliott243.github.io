@@ -40,38 +40,40 @@ const SOCIALS = [
 export default function Hero() {
   return (
     <section className="relative h-screen min-h-[100svh] overflow-hidden bg-paper">
-      <div className="enter-name pointer-events-none absolute inset-0 z-[1] -rotate-[6deg]">
-        <p className="font-display text-hollow absolute left-[5%] top-[7%] text-[clamp(4rem,11vw,11rem)] uppercase leading-[0.78] tracking-[-0.04em] md:left-[7%] md:top-[9%]">
+      <div className="enter-name pointer-events-none absolute inset-0 z-[1] origin-[50%_45%] -rotate-[6deg]">
+        <p className="font-display text-hollow absolute left-[4%] top-[10%] text-[clamp(4.2rem,12vw,10.5rem)] uppercase leading-[0.76] tracking-[-0.05em] md:left-[6%]">
           Elie
         </p>
-        <p className="font-display absolute right-[2%] top-[26%] text-right text-[clamp(4rem,11vw,11rem)] uppercase leading-[0.78] tracking-[-0.04em] text-ink md:right-[5%] md:top-[30%]">
+        <p className="font-display absolute right-[3%] top-[34%] text-right text-[clamp(4.2rem,12vw,10.5rem)] uppercase leading-[0.76] tracking-[-0.05em] text-ink md:right-[6%] md:top-[36%]">
           Katende
         </p>
       </div>
 
-      <img
-        src="/photo-detouree.png"
-        alt="Elie Katende"
-        className="enter-photo pointer-events-none absolute bottom-0 left-1/2 z-[2] h-[48vh] max-h-[620px] w-auto -translate-x-1/2 select-none object-contain object-bottom md:h-[54vh]"
-      />
+      <div className="enter-photo pointer-events-none absolute bottom-0 left-1/2 z-[2] h-[64vh] w-[min(48vw,560px)] -translate-x-1/2 overflow-hidden max-md:w-[78vw]">
+        <img
+          src="/photo-detouree.png?v=4"
+          alt="Elie Katende"
+          className="absolute bottom-0 left-1/2 h-[70vh] w-auto max-w-none -translate-x-1/2 select-none object-cover object-top"
+        />
+      </div>
 
-      <div className="enter-copy absolute left-[7%] top-[46%] z-[3] max-w-[220px] -rotate-[6deg] md:left-[8%] md:top-[48%] md:max-w-[240px] max-md:left-[6%] max-md:top-auto max-md:bottom-[34%] max-md:rotate-0">
+      <div className="enter-copy absolute left-[8%] top-[44%] z-[3] max-w-[230px] origin-left -rotate-[6deg] max-md:bottom-[30%] max-md:left-[6%] max-md:top-auto max-md:rotate-0">
         <p className="font-sans text-[13px] leading-tight text-ink md:text-[14px]">
-          <span className="font-bold uppercase tracking-wide">Développeur</span>{' '}
-          <span className="font-medium">full stack</span>
+          <span className="font-bold uppercase tracking-[0.04em]">Développeur</span>{' '}
+          <span>full stack</span>
         </p>
-        <p className="mt-2 font-sans text-[12px] leading-snug text-[#4a4a4a]">
+        <p className="mt-2 font-sans text-[12px] leading-snug text-[#3f3f3f]">
           Étudiant en informatique et développeur full stack indépendant basé à Kinshasa.
         </p>
         <a
           href="tel:+243814367673"
-          className="mt-4 inline-flex items-center rounded-full bg-ink px-4 py-2 font-sans text-[11px] font-medium tracking-wide text-white"
+          className="mt-4 inline-flex items-center rounded-full bg-ink px-4 py-[7px] font-sans text-[11px] font-medium text-white"
         >
           +243 81 436 76 73
         </a>
       </div>
 
-      <ul className="enter-links absolute bottom-[7%] right-[6%] z-[3] flex -rotate-[6deg] flex-col gap-2.5 max-md:bottom-4 max-md:right-0 max-md:left-0 max-md:flex-row max-md:justify-center max-md:rotate-0">
+      <ul className="enter-links absolute bottom-[8%] right-[7%] z-[3] flex origin-bottom-right -rotate-[6deg] flex-col gap-2.5 max-md:bottom-5 max-md:left-0 max-md:right-0 max-md:flex-row max-md:justify-center max-md:rotate-0">
         {SOCIALS.map((item) => (
           <li key={item.label}>
             <a
@@ -80,7 +82,7 @@ export default function Hero() {
               rel="noreferrer"
               className="flex items-center gap-2 font-sans text-[12px] text-[#6b6b6b] hover:text-ink"
             >
-              <span className="flex h-4 w-4 items-center justify-center rounded-full border border-[#cfcfcf] text-[#6b6b6b]">
+              <span className="flex h-4 w-4 items-center justify-center rounded-full border border-[#c8c8c8]">
                 {item.icon}
               </span>
               {item.label}
