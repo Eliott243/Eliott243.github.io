@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    @apply m-0 min-h-screen bg-paper text-ink antialiased;
+  }
+}
+
+@layer utilities {
+  .text-hollow {
+    color: transparent;
+    -webkit-text-stroke: 1.5px #111111;
+    text-stroke: 1.5px #111111;
+  }
+
+  .enter-name {
+    animation: enter 900ms ease-out both;
+  }
+
+  .enter-photo {
+    animation: enter 1100ms ease-out 120ms both;
+  }
+
+  .enter-copy {
+    animation: enter 800ms ease-out 220ms both;
+  }
+
+  .enter-links {
+    animation: enter 800ms ease-out 320ms both;
+  }
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

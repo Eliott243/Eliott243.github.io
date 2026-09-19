@@ -1,17 +1,8 @@
 # Portfolio — Elie Katende
 
-Site personnel d’Elie Katende Kazwela, ingénieur informatique.
-
-## Lancer en local
-
-Ouvre `index.html` dans le navigateur, ou :
+Hero éditorial (prénom creux, nom plein, photo détourée au centre).
 
 ```bash
-python3 -m http.server 5173
+npm install
+npm run dev
 ```
-
-Puis va sur http://localhost:5173
-
-## Contenu
-
-Photo, CV (expérience, projets, certificats) et GitHub `Eliott243`.
