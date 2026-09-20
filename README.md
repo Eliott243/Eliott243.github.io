@@ -37,10 +37,18 @@ dans `src/components/LangSwitch.jsx`.
 Le formulaire de contact utilise **mailto:** (aucun service tiers, aucune clé à configurer).
 Pour passer à Formspree ou EmailJS, remplace `handleSubmit` dans `Contact.jsx`.
 
+Le bouton « Télécharger mon CV » sert `public/CV_Elie_Katende_FR.pdf` en français et
+`public/CV_Elie_Katende_EN.pdf` en anglais (voir `profile.cvUrl`).
+
+## Mise en ligne
+
+Le site est publié sur GitHub Pages à l'adresse **https://eliott243.github.io**.
+Chaque `git push` sur `main` déclenche `.github/workflows/deploy.yml`, qui compile le projet et
+redéploie le site. La source Pages du dépôt doit rester sur « GitHub Actions ».
+
 ## À compléter
 
-1. `public/CV_Elie_Katende.pdf` — le CV en PDF (le bouton « Télécharger mon CV » pointe déjà dessus)
-2. `public/projects/*.svg` — remplacer les 5 aperçus placeholder par de vraies captures
-3. Liens démo / dépôt des projets autres que FinLearn, dans `src/data/portfolio.js`
-4. URL Instagram réelle (placeholder actuellement) dans `socials`
-5. `public/og-image.svg` — remplacer par une vraie image de partage (1200×630, PNG ou JPG de préférence)
+1. `public/projects/*.svg` — remplacer les 5 aperçus placeholder par de vraies captures
+2. Liens démo / dépôt des projets autres que FinLearn, dans `src/data/portfolio.js`
+3. URL Instagram réelle (placeholder actuellement) dans `socials`
+4. `public/og-image.svg` — remplacer par une vraie image de partage (1200×630, PNG ou JPG de préférence)

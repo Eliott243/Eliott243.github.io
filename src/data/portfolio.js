@@ -19,8 +19,7 @@ export const profile = {
   phone: '+243 81 436 76 73',
   phoneRaw: '+243814367673',
   email: 'eliekatende35@gmail.com',
-  // TODO: remplacer par le PDF de ton CV déposé dans /public
-  cvUrl: '/CV_Elie_Katende.pdf',
+  cvUrl: { fr: '/CV_Elie_Katende_FR.pdf', en: '/CV_Elie_Katende_EN.pdf' },
   bio: {
     fr: [
       "Je suis développeur full stack. J'ai commencé par les données — nettoyer, fiabiliser, faire parler des bases qui servent à décider — avant d'aller vers le développement d'applications.",

@@ -62,7 +62,7 @@ export default function About() {
 
           <Reveal delay={0.16}>
             <MagneticLink
-              href={profile.cvUrl}
+              href={t(profile.cvUrl)}
               download
               className="mt-4 inline-flex min-h-[44px] items-center rounded-full bg-ink px-6 text-xs font-medium text-white"
             >
