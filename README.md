@@ -37,8 +37,8 @@ dans `src/components/LangSwitch.jsx`.
 Le formulaire de contact utilise **mailto:** (aucun service tiers, aucune clé à configurer).
 Pour passer à Formspree ou EmailJS, remplace `handleSubmit` dans `Contact.jsx`.
 
-Le bouton « Télécharger mon CV » sert `public/CV_Elie_Katende_FR.pdf` en français et
-`public/CV_Elie_Katende_EN.pdf` en anglais (voir `profile.cvUrl`).
+Le bouton « Télécharger mon CV » sert `public/CV-Elie-Katende-FR.pdf` en français et
+`public/CV-Elie-Katende-EN.pdf` en anglais (voir `profile.cvUrl`).
 
 ## Mise en ligne
 
