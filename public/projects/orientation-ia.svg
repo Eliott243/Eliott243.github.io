@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Student Orientation IA">
+  <rect width="800" height="500" fill="#E4E4E0"/>
+  <g fill="none" stroke="#C9C9C4" stroke-width="1">
+    <path d="M0 125h800M0 250h800M0 375h800M200 0v500M400 0v500M600 0v500"/>
+  </g>
+  <text x="56" y="250" font-family="Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#111111">Student Orientation IA</text>
+  <text x="56" y="292" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#6B6B6B">JavaScript · Explainable AI</text>
+  <text x="56" y="440" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="3" fill="#8A8A85">APERCU A REMPLACER</text>
+</svg>

@@ -3,10 +3,17 @@
 @tailwind utilities;
 
 @layer base {
-  html,
-  body,
-  #root {
-    @apply m-0 min-h-screen bg-paper text-ink antialiased;
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 overflow-x-hidden bg-paper font-sans text-ink antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid #111111;
+    outline-offset: 3px;
   }
 }
 
@@ -14,31 +21,55 @@
   .text-hollow {
     color: transparent;
     -webkit-text-stroke: 1.5px #111111;
-    text-stroke: 1.5px #111111;
   }
 
-  .enter-name {
-    animation: fade-up 900ms ease-out both;
+  .text-hollow-thick {
+    color: transparent;
+    -webkit-text-stroke: 2px #111111;
   }
 
-  .enter-photo {
-    animation: fade-up 1100ms ease-out 120ms both;
-  }
-
-  .enter-copy {
-    animation: fade-up 800ms ease-out 220ms both;
-  }
-
-  .enter-links {
-    animation: fade-up 800ms ease-out 320ms both;
+  .section-x {
+    @apply px-[8vw];
   }
 }
 
-@keyframes fade-up {
+.marquee-track {
+  animation: marquee 28s linear infinite;
+}
+
+.marquee-track-reverse {
+  animation: marquee 28s linear infinite reverse;
+}
+
+.marquee:hover .marquee-track,
+.marquee:hover .marquee-track-reverse {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
   from {
-    opacity: 0;
+    transform: translateX(0);
   }
   to {
-    opacity: 1;
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .marquee-track,
+  .marquee-track-reverse {
+    animation: none;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .cursor-none-desktop,
+  .cursor-none-desktop a,
+  .cursor-none-desktop button {
+    cursor: none;
   }
 }
